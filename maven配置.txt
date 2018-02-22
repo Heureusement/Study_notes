@@ -1,0 +1,8 @@
+1.配置JAVA环境
+2.配置环境变量MAVEN_HOME=D:\apache-maven-3.5.2
+3.增加path=%MAVEN_HOME%\bin
+4.控制台输入 mvn -v确认配置成功
+5.修改conf/setting.xml，在<setting></setting>中配置本地仓库地址，例如
+<localRepository>D:\m2\repository</localRepository>
+6.将setting.xml拷贝到本地仓库文件夹内
+7.控制台输入 mvn help:system，拉去基础包
