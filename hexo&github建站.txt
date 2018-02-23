@@ -1,80 +1,80 @@
 Heureusement
-1.´´½¨github²Ö¿â
-²Ö¿âÃû³ÆÎª[githubÓÃ»§Ãû].github.io
+1.åˆ›å»ºgithubä»“åº“
+ä»“åº“åç§°ä¸º[githubç”¨æˆ·å].github.io
 
-2.ÅäÖÃSSH
-ÉèÖÃuser nameºÍemail
-$ git config --global user.name "ÄãµÄGitHubÓÃ»§Ãû"
-$ git config --global user.email "ÄãµÄGitHub×¢²áÓÊÏä"
+2.é…ç½®SSH
+è®¾ç½®user nameå’Œemail
+$ git config --global user.name "ä½ çš„GitHubç”¨æˆ·å"
+$ git config --global user.email "ä½ çš„GitHubæ³¨å†Œé‚®ç®±"
 
-Éú³ÉsshÃÜÔ¿:ÊäÈëÏÂÃæÃüÁî
-$ ssh-keygen -t rsa -C "ÄãµÄGitHub×¢²áÓÊÏä"
+ç”Ÿæˆsshå¯†é’¥:è¾“å…¥ä¸‹é¢å‘½ä»¤
+$ ssh-keygen -t rsa -C "ä½ çš„GitHubæ³¨å†Œé‚®ç®±"
 
-´ËÊ±£¬ÔÚÓÃ»§ÎÄ¼ş¼ĞÏÂ¾Í»áÓĞÒ»¸öĞÂµÄÎÄ¼ş¼Ğ.ssh£¬ÀïÃæÓĞ¸Õ¸Õ´´½¨µÄsshÃÜÔ¿ÎÄ¼şid_rsaºÍid_rsa.pub¡£
-×¢£ºid_rsaÎÄ¼şÊÇË½Ô¿£¬ÒªÍ×ÉÆ±£¹Ü£¬id_rsa.pubÊÇ¹«Ô¿ÎÄ¼ş¡£
+æ­¤æ—¶ï¼Œåœ¨ç”¨æˆ·æ–‡ä»¶å¤¹ä¸‹å°±ä¼šæœ‰ä¸€ä¸ªæ–°çš„æ–‡ä»¶å¤¹.sshï¼Œé‡Œé¢æœ‰åˆšåˆšåˆ›å»ºçš„sshå¯†é’¥æ–‡ä»¶id_rsaå’Œid_rsa.pubã€‚
+æ³¨ï¼šid_rsaæ–‡ä»¶æ˜¯ç§é’¥ï¼Œè¦å¦¥å–„ä¿ç®¡ï¼Œid_rsa.pubæ˜¯å…¬é’¥æ–‡ä»¶ã€‚
 
-½«id_rsa.pubÖĞµÄÄÚÈİ¸´ÖÆµ½KeyÎÄ±¾¿òÖĞ£¬È»ºóµã»÷Add SSH key(Ìí¼ÓSSH)°´Å¥£»
+å°†id_rsa.pubä¸­çš„å†…å®¹å¤åˆ¶åˆ°Keyæ–‡æœ¬æ¡†ä¸­ï¼Œç„¶åç‚¹å‡»Add SSH key(æ·»åŠ SSH)æŒ‰é’®ï¼›
 
 $ ssh -T git@github.com
-½ÓÏÂÀ´»á³öÀ´ÏÂÃæµÄÈ·ÈÏĞÅÏ¢£º
+æ¥ä¸‹æ¥ä¼šå‡ºæ¥ä¸‹é¢çš„ç¡®è®¤ä¿¡æ¯ï¼š
 The authenticity of host 'github.com (207.97.227.239)' can't be established. 
-RSA key fingerprint is 17:24:ac:a5:76:28:24:36:62:1b:36:4d:eb:df:a6:45.
+RSA key fingerprint is ********************************************.
 Are you sure you want to continue connecting (yes/no)?
 
-ÊäÈëyesºó»Ø³µ¡£
+è¾“å…¥yesåå›è½¦ã€‚
 
 
-È»ºóÏÔÊ¾ÈçÏÂĞÅÏ¢ÔòOK(ÆäÖĞµÄSeayXuÊÇÓÃ»§Ãû)
+ç„¶åæ˜¾ç¤ºå¦‚ä¸‹ä¿¡æ¯åˆ™OK(å…¶ä¸­çš„SeayXuæ˜¯ç”¨æˆ·å)
 Hi SeayXu! You've successfully authenticated, 
 but GitHub does not provide shell access.
 
-3.´´½¨²©¿ÍÎÄ¼ş¼Ğ
-ĞÂ½¨²©¿ÍÎÄ¼ş¼Ğ£ºÕâÀï¾ÍÈ¡ÃûÎªblog
+3.åˆ›å»ºåšå®¢æ–‡ä»¶å¤¹
+æ–°å»ºåšå®¢æ–‡ä»¶å¤¹ï¼šè¿™é‡Œå°±å–åä¸ºblog
 mkdir blog
-½øÈëµ½blogÎÄ¼ş¼Ğ£º
-cd blog # ÇĞ»»µ½blogÄ¿Â¼
+è¿›å…¥åˆ°blogæ–‡ä»¶å¤¹ï¼š
+cd blog # åˆ‡æ¢åˆ°blogç›®å½•
 
-ÒÔÏÂ²Ù×÷ÊÇÔÚblogÎÄ¼ş¼ĞÖĞ
-°²×°Nodejs
+ä»¥ä¸‹æ“ä½œæ˜¯åœ¨blogæ–‡ä»¶å¤¹ä¸­
+å®‰è£…Nodejs
 
-°²×°Hexo
+å®‰è£…Hexo
 npm install hexo-cli -g
 
-³õÊ¼»¯Hexo
+åˆå§‹åŒ–Hexo
 hexo init
 
-°²×°ÒÀÀµ
+å®‰è£…ä¾èµ–
 npm install
 
-Æô¶¯Hexo
+å¯åŠ¨Hexo
 hexo server
 
 http://localhost:4000
 
-ĞÂ½¨ÎÄÕÂ£ºhexo new <title>
-´ËÊ±ÔÚsource_postsÎÄ¼ş¼ĞÖĞ±ã»á¶à³öÒ»¸öÎÄµµ"title.md".
-Èç¹ûÒªÉ¾³ı£¬Ö±½ÓÔÚ´ËÎÄ¼ş¼ĞÏÂÉ¾³ı¶ÔÓ¦µÄÎÄ¼ş¼´¿É¡£
+æ–°å»ºæ–‡ç« ï¼šhexo new <title>
+æ­¤æ—¶åœ¨source_postsæ–‡ä»¶å¤¹ä¸­ä¾¿ä¼šå¤šå‡ºä¸€ä¸ªæ–‡æ¡£"title.md".
+å¦‚æœè¦åˆ é™¤ï¼Œç›´æ¥åœ¨æ­¤æ–‡ä»¶å¤¹ä¸‹åˆ é™¤å¯¹åº”çš„æ–‡ä»¶å³å¯ã€‚
 
-Éú³É¾²Ì¬Ò³Ãæ
+ç”Ÿæˆé™æ€é¡µé¢
 hexo generate
-Éú³ÉµÄ¾²Ì¬ÄÚÈİÔÚpublicÎÄ¼ş¼ĞÄÚ¡£
+ç”Ÿæˆçš„é™æ€å†…å®¹åœ¨publicæ–‡ä»¶å¤¹å†…ã€‚
 
-Çå³ıÉú³ÉÄÚÈİ
+æ¸…é™¤ç”Ÿæˆå†…å®¹
 hexo clean
-Ö´ĞĞ´Ë²Ù×÷»áÉ¾³ıpublicÎÄ¼ş¼ĞÖĞµÄÄÚÈİ¡£
+æ‰§è¡Œæ­¤æ“ä½œä¼šåˆ é™¤publicæ–‡ä»¶å¤¹ä¸­çš„å†…å®¹ã€‚
 
-²¿ÊğHexo
+éƒ¨ç½²Hexo
 hexo deploy
-¸Ã²Ù×÷»á½«hexoÉú³ÉµÄ¾²Ì¬ÄÚÈİ²¿Êğµ½ÅäÖÃµÄ²Ö¿âÖĞ
+è¯¥æ“ä½œä¼šå°†hexoç”Ÿæˆçš„é™æ€å†…å®¹éƒ¨ç½²åˆ°é…ç½®çš„ä»“åº“ä¸­
 
-4.²¿ÊğHexo
-±à¼­ÅäÖÃÎÄ¼ş£¬¹ØÁªÔ¶³Ì²Ö¿â£º
-ÔÚ±à¼­Æ÷ÖĞ´ò¿ªHexoÅäÖÃÎÄ¼ş_config.yml£¬ÕÒµ½ÏÂÃæÄÚÈİ£º
+4.éƒ¨ç½²Hexo
+ç¼–è¾‘é…ç½®æ–‡ä»¶ï¼Œå…³è”è¿œç¨‹ä»“åº“ï¼š
+åœ¨ç¼–è¾‘å™¨ä¸­æ‰“å¼€Hexoé…ç½®æ–‡ä»¶_config.ymlï¼Œæ‰¾åˆ°ä¸‹é¢å†…å®¹ï¼š
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 type:
-ÏòÆäÖĞÌí¼Ógithub²Ö¿âĞÅÏ¢£º
+å‘å…¶ä¸­æ·»åŠ githubä»“åº“ä¿¡æ¯ï¼š
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 
@@ -82,40 +82,40 @@ deploy:
 
 type: git
 
-repo: git@github.com:SeayXu/seayxu.github.io.git #github²Ö¿âµØÖ·
-branch: master # github·ÖÖ§
+repo: git@github.com:SeayXu/seayxu.github.io.git #githubä»“åº“åœ°å€
+branch: master # githubåˆ†æ”¯
 
-×¢Òâ£ºtype¡¢repo¡¢branchµÄÇ°ÃæÓĞÁ½¸ö¿Õ¸ñ£¬ºóÃæµÄ:ºóÃæÓĞÒ»¸ö¿Õ¸ñ
+æ³¨æ„ï¼štypeã€repoã€branchçš„å‰é¢æœ‰ä¸¤ä¸ªç©ºæ ¼ï¼Œåé¢çš„:åé¢æœ‰ä¸€ä¸ªç©ºæ ¼
 
-°²×°git²å¼ş
+å®‰è£…gitæ’ä»¶
 npm install hexo-deployer-git --save
-Èç¹ûÃ»ÓĞ°²×°git²å¼ş£¬»áÓĞ´íÎóÌáÊ¾£¬°²×°ºóÖØĞÂ²¿Êğ¾Í¿ÉÒÔÁË¡£
+å¦‚æœæ²¡æœ‰å®‰è£…gitæ’ä»¶ï¼Œä¼šæœ‰é”™è¯¯æç¤ºï¼Œå®‰è£…åé‡æ–°éƒ¨ç½²å°±å¯ä»¥äº†ã€‚
 
-²¿Êğ
+éƒ¨ç½²
 hexo deploy
-²¿Êğ¾Í³É¹¦ÁË£¬¿ÉÒÔ´ò¿ª http://<ÓÃ»§Ãû>.github.io ²é¿´
+éƒ¨ç½²å°±æˆåŠŸäº†ï¼Œå¯ä»¥æ‰“å¼€ http://<ç”¨æˆ·å>.github.io æŸ¥çœ‹
 
-hexoÃüÁîËõĞ´
-hexo g£ºhexo generate
-hexo c£ºhexo clean
-hexo s£ºhexo server
-hexo d£ºhexo deploy
+hexoå‘½ä»¤ç¼©å†™
+hexo gï¼šhexo generate
+hexo cï¼šhexo clean
+hexo sï¼šhexo server
+hexo dï¼šhexo deploy
 
-hexoÃüÁî×éºÏ
-hexo clean && hexo g -s£¬¾ÍÊÇÇå³ı¡¢Éú³É¡¢Æô¶¯
-hexo clean && hexo g -d£¬¾ÍÊÇÇå³ı¡¢Éú³É¡¢²¿Êğ
+hexoå‘½ä»¤ç»„åˆ
+hexo clean && hexo g -sï¼Œå°±æ˜¯æ¸…é™¤ã€ç”Ÿæˆã€å¯åŠ¨
+hexo clean && hexo g -dï¼Œå°±æ˜¯æ¸…é™¤ã€ç”Ÿæˆã€éƒ¨ç½²
 
 
-¿ËÂ¡Ö÷Ìâ
+å…‹éš†ä¸»é¢˜
 $ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
 
-ĞŞ¸Ä_config.ymlÎÄ¼ş
+ä¿®æ”¹_config.ymlæ–‡ä»¶
 theme: yilia
 
-½øÈëE:hexo/themes/yilia
+è¿›å…¥E:hexo/themes/yilia
 git pull
 
-²âÊÔÍÆËÍ
-»Øµ½bolg/
-Ö´ĞĞ: hexo generate hexo server, ´ò¿ªlocalhost:4000Ô¤ÀÀ,¾Í¿ÉÒÔ¿´µ½ĞÂµÄÖ÷Ìâ
-È»ºóhexo deployÍÆËÍµ½github.io
+æµ‹è¯•æ¨é€
+å›åˆ°bolg/
+æ‰§è¡Œ: hexo generate hexo server, æ‰“å¼€localhost:4000é¢„è§ˆ,å°±å¯ä»¥çœ‹åˆ°æ–°çš„ä¸»é¢˜
+ç„¶åhexo deployæ¨é€åˆ°github.io
