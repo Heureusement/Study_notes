@@ -1,0 +1,21 @@
+{
+    "server":"0.0.0.0",
+    "server_ipv6":"[::]",
+    "local_address":"127.0.0.1",
+    "local_port":1080,
+    "port_password":{
+        "443":"password1",
+        "9999":"password2",
+        "10000":"password3"
+    },
+    "timeout":120,
+    "method":"aes-256-cfb",
+    "protocol":"auth_sha1_v4",
+    "protocol_param":"",
+    "obfs":"tls1.2_ticket_fastauth",
+    "obfs_param":"",
+    "redirect":"",
+    "dns_ipv6":false,
+    "fast_open":true,
+    "workers":1
+}
