@@ -1,0 +1,7 @@
+在项目package.json所在目录下
+npm install gulp-cli -g
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+cnpm install
+安装成功后，输入指令‘gulp serve’启动服务器

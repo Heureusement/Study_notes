@@ -1,0 +1,121 @@
+Heureusement
+1.创建github仓库
+仓库名称为[github用户名].github.io
+
+2.配置SSH
+设置user name和email
+$ git config --global user.name "你的GitHub用户名"
+$ git config --global user.email "你的GitHub注册邮箱"
+
+生成ssh密钥:输入下面命令
+$ ssh-keygen -t rsa -C "你的GitHub注册邮箱"
+
+此时，在用户文件夹下就会有一个新的文件夹.ssh，里面有刚刚创建的ssh密钥文件id_rsa和id_rsa.pub。
+注：id_rsa文件是私钥，要妥善保管，id_rsa.pub是公钥文件。
+
+将id_rsa.pub中的内容复制到Key文本框中，然后点击Add SSH key(添加SSH)按钮；
+
+$ ssh -T git@github.com
+接下来会出来下面的确认信息：
+The authenticity of host 'github.com (207.97.227.239)' can't be established. 
+RSA key fingerprint is ********************************************.
+Are you sure you want to continue connecting (yes/no)?
+
+输入yes后回车。
+
+
+然后显示如下信息则OK(其中的SeayXu是用户名)
+Hi SeayXu! You've successfully authenticated, 
+but GitHub does not provide shell access.
+
+3.创建博客文件夹
+新建博客文件夹：这里就取名为blog
+mkdir blog
+进入到blog文件夹：
+cd blog # 切换到blog目录
+
+以下操作是在blog文件夹中
+安装Nodejs
+
+安装Hexo
+npm install hexo-cli -g
+
+初始化Hexo
+hexo init
+
+安装依赖
+npm install
+
+启动Hexo
+hexo server
+
+http://localhost:4000
+
+新建文章：hexo new <title>
+此时在source_posts文件夹中便会多出一个文档"title.md".
+如果要删除，直接在此文件夹下删除对应的文件即可。
+
+生成静态页面
+hexo generate
+生成的静态内容在public文件夹内。
+
+清除生成内容
+hexo clean
+执行此操作会删除public文件夹中的内容。
+
+部署Hexo
+hexo deploy
+该操作会将hexo生成的静态内容部署到配置的仓库中
+
+4.部署Hexo
+编辑配置文件，关联远程仓库：
+在编辑器中打开Hexo配置文件_config.yml，找到下面内容：
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+type:
+向其中添加github仓库信息：
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+
+deploy:
+
+type: git
+
+repo: git@github.com:SeayXu/seayxu.github.io.git #github仓库地址
+branch: master # github分支
+
+注意：type、repo、branch的前面有两个空格，后面的:后面有一个空格
+
+安装git插件
+npm install hexo-deployer-git --save
+如果没有安装git插件，会有错误提示，安装后重新部署就可以了。
+
+部署
+hexo deploy
+部署就成功了，可以打开 http://<用户名>.github.io 查看
+
+hexo命令缩写
+hexo g：hexo generate
+hexo c：hexo clean
+hexo s：hexo server
+hexo d：hexo deploy
+
+hexo命令组合
+hexo clean && hexo g -s，就是清除、生成、启动
+hexo clean && hexo g -d，就是清除、生成、部署
+
+
+克隆主题
+$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+
+修改_config.yml文件
+theme: yilia
+
+进入E:hexo/themes/yilia
+git pull
+
+测试推送
+回到bolg/
+执行: hexo generate hexo server, 打开localhost:4000预览,就可以看到新的主题
+然后hexo deploy推送到github.io
